@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">   
+    <style> 
+    .row > div{
+        background: #f2f2f2;
+        margin:  10px 0;
+        padding:  40px;
+
+    }
+    </style>
+</head>
+<body>
+    <!--El container es el contenedor principal, en el iran todas las filas y columnas-->
+    <!--Con el container podemos centrar nuestra pagina-->
+   <div class="container">
+    <!--Las filas(row) son grupos horizontales de columnas -->
+         <div class="row">
+            <div class="col-12 col-sm-6"> 
+                <h1>hola a todos</h1>
+                <p>Triple-hil sires son una empresa de inseminación artificial y recolección de semen personalizada ubicada en Smithsburg, Maryland, Estados Unidos1. Ofrecen una selección de jóvenes sementales de las razas Holstein, Jersey, Guernsey, Ayrshire y Lineback, con un enfoque en las familias de vacas, la longevidad y los altos componentes1. Puedes visitar su sitio web1 o su página de Facebook2 para obtener más información sobre sus servicios y productos. 🐄</p>
+                <button class="btn btn-primary">Ver mas</button>
+            </div>
+            <div class="col-12 col-sm-6"> 
+                <h1>hola a todos</h1>
+                <p>Triple-hil sires son una empresa de inseminación artificial y recolección de semen personalizada ubicada en Smithsburg, Maryland, Estados Unidos1. Ofrecen una selección de jóvenes sementales de las razas Holstein, Jersey, Guernsey, Ayrshire y Lineback, con un enfoque en las familias de vacas, la longevidad y los altos componentes1. Puedes visitar su sitio web1 o su página de Facebook2 para obtener más información sobre sus servicios y productos. 🐄</p>
+                <button class="btn btn-primary">Ver mas</button>
+            </div>
+            <div class="col col-log-6"> 
+                <h1>hola a todos</h1>
+                <p>Triple-hil sires son una empresa de inseminación artificial y recolección de semen personalizada ubicada en Smithsburg, Maryland, Estados Unidos1. Ofrecen una selección de jóvenes sementales de las razas Holstein, Jersey, Guernsey, Ayrshire y Lineback, con un enfoque en las familias de vacas, la longevidad y los altos componentes1. Puedes visitar su sitio web1 o su página de Facebook2 para obtener más información sobre sus servicios y productos. 🐄</p>
+                <button class="btn btn-primary">Ver mas</button>
+            </div>
+         </div>    
+   </div>
+   <script src="../js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
