@@ -1,0 +1,17 @@
+body{
+
+    background: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .nav {
+
+    min-height: 80px;
+    overflow: hidden;
+    background: #fff;
+
+}
+
+header .menu .c2{background: #005385;}
+
+header .menu .c2:hover{background: #00426a;}
