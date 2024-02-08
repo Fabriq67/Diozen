@@ -15,3 +15,38 @@ header .nav {
 header .menu .c2{background: #005385;}
 
 header .menu .c2:hover{background: #00426a;}
+
+/*Main*/
+.portafolio{
+
+    border-top: 5px solid  #3da5e2;
+    
+    background-color: #fff;
+}
+
+.portafolio .titulo{
+      color: rgb(0, 255, 123);
+ font-family: 'Taleway' , sans-serif;
+ font-weight: 300;
+}
+
+.portafolio .galeria .contenedor-imagen {
+
+    max-height: 180px;
+    overflow: hidden;
+
+}
+
+.portafolio .galeria .contenedor-imagen a {
+     
+    background: #3de284;
+
+    display: inline-block;
+
+}
+
+.portafolio .galeria .contenedor-imagen:hover img {
+     
+    opacity: .3;
+
+}
