@@ -1,3 +1,74 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Lobster&display=swap');
+
+/* Definir paleta de colores */
+:root {
+  --c1: #f8f9fa;
+  --c2: #007bff;
+  --c3: #6c757d;
+  --c4: #343a40;
+  --c5: #fff;
+}
+
+/* Aplicar estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--c1);
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  color: var(--c4);
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--c2);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: var(--c3);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+/* Aplicar estilos específicos */
+.nav {
+  background-color: var(--c2);
+  padding: 1rem;
+}
+
+.contenedor-main {
+  margin-top: 1rem;
+}
+
+.icono {
+  margin-left: 0.5rem;
+}
+
+.c2 {
+  background-color: var(--c2);
+}
+
+.c2:hover {
+  background-color: var(--c4);
+}
+
+
+
 body{
 
     background: #f2f2f2;
@@ -16,70 +87,13 @@ header .menu .c2{background: #005385;}
 
 header .menu .c2:hover{background: #00426a;}
 
-/*Main*/
-.portafolio{
-
-    border-top: 5px solid  #3da5e2;
-    
-    background-color: #fff;
-}
-
-.portafolio .titulo{
-      color: rgb(0, 255, 123);
- font-family: 'Taleway' , sans-serif;
- font-weight: 300;
-}
-
-.portafolio .galeria .contenedor-imagen {
-
-    max-height: 180px;
-    overflow: hidden;
-
-}
-
-.portafolio .galeria .contenedor-imagen a {
-     
-    background: #3de284;
-
-    display: inline-block;
-
-}
-
-/*Footer*/
-.redes-sociales{
-
+/* Footer */
+.redes-sociales {
     padding: 40px 0;
-
     margin-bottom: 40px;
-
 }
 
-.redes-sociales .icono{
-
-    width: 100px;
-    height: 100px;
-    color: #fff;
-    background: #cbcbcb;
-    display: inline-block;
-    margin: 0px 20px;
-    text-decoration: none;
-    border-radius: 180px;
-    transition: all .3s ease;   
-}
-
-.redes-sociales .icono svg {
-    
-    width: 40px;
-
-    height: 40px;
-
-}
-
-.redes-sociales .twitter {background: #1da1f2;}
-.redes-sociales .instagram {background: #f21dd6;}
-.redes-sociales .WhatsApp {background: #84f21d;}
-
-.icono {
+.redes-sociales .icono {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -90,12 +104,33 @@ header .menu .c2:hover{background: #00426a;}
     margin: 10px; /* Espacio entre los iconos */
 }
 
-.imagen {
+.redes-sociales .imagen {
     width: 100px; /* Tamaño de las imágenes */
     height: 100px; /* Tamaño de las imágenes */
     overflow: hidden;
     position: relative;
 }
+
+.redes-sociales .imagen img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    border-radius: 50%; /* Hace que las imágenes sean redondas */
+}
+
+.redes-sociales .icono svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff; /* Color de los iconos */
+}
+
+.redes-sociales .twitter { background: #1da1f2; }
+.redes-sociales .instagram { background: #f21dd6; }
+.redes-sociales .WhatsApp { background: #84f21d; }
+
 
 .imagen img {
     width: 100%;
@@ -105,7 +140,8 @@ header .menu .c2:hover{background: #00426a;}
     left: 0;
     object-fit: cover; /* Ajusta la imagen dentro del contenedor */
     border-radius: 50%; /* Hace que las imágenes sean redondas */
-}
+} 
+
 .modal-dialog{
 
     max-width: 1000px;
@@ -141,3 +177,38 @@ header .menu .c2:hover{background: #00426a;}
   .portafolio .galeria .contenedor-imagen:nth-child(6){order: 4;}
 
 }
+
+
+    .contenedor-imagen {
+        overflow: hidden;
+    }
+    .contenedor-imagen img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .titulo {
+        color: #333; /* Color del título */
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .galeria {
+        background-color: #f9f9f9; /* Color de fondo de la galería */
+        border: 1px solid #ddd; /* Borde de la galería */
+        border-radius: 10px; /* Borde redondeado */
+        padding: 20px;
+    }
+    .contenedor-imagen {
+        overflow: hidden;
+        border-radius: 10px; /* Borde redondeado */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+    .contenedor-imagen img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
