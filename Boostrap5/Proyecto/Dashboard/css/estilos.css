@@ -1,0 +1,74 @@
+body{
+
+    background: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*----Barra lateral----*/
+
+.barra-lateral{
+
+    background: #07785a6d;
+    color: #fff;
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+.barra-lateral a {
+   color: #fff;
+
+}
+
+/*Logo*/
+
+.barra-lateral .logo{
+
+    background: #9dc3d8;
+}
+
+.barra-lateral .logo h2{
+
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+.barra-lateral .menu a{
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255, .1);
+}
+.barra-lateral .menu a:hover{
+
+    background: #35ae35;
+}
+.barra-lateral .menu a svg{
+    margin-right: 10px ;
+}
+
+@media screen and (max-width: 320px) {}
+@media screen and (max-width: 576px) {
+    .barra-lateral{
+        min-height: auto;
+    }
+}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 1200px) {
+    .barra-lateral{
+        min-width: auto;
+    }
+    .barra-lateral .logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 1400px) {}
+
