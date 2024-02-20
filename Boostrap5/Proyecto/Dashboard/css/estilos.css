@@ -131,6 +131,49 @@ a{
 background: #262626;
 }
 
+.main .comentarios .comentario{
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #dfdfdf ;
+}
+
+.main .comentarios .comentario .foto a{
+    display: inline-block;
+}
+
+.main .comentarios .comentario .texto{
+    flex: 1;
+}
+
+.main .comentarios .comentario .texto-comentario{
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.main .comentarios .comentario .botones button {
+background: none; 
+cursor: pointer;
+color: #fff;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 500;
+border: none;
+display: inline-block;
+padding: 5px 10px;
+border-radius: 3px;
+transition: all .3s ease;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+.main .comentarios .comentario .botones .aprobar {background: #09754d;}
+.main .comentarios .comentario .botones .Eliminar {background: #b74848;}
+.main .comentarios .comentario .botones .Bloquear {color: #acacac;}
+
+.main .comentarios .comentario .botones .aprobar:hover{background: #18cb89;}
+.main .comentarios .comentario .botones .Eliminar:hover{background: #da0909;}
+.main .comentarios .comentario .botones .Bloquear:hover{color: #acacac; background: #acacac;}
+
 
 
 @media screen and (max-width: 320px) {}
