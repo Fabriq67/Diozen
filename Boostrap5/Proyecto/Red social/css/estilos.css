@@ -1,0 +1,98 @@
+:root{
+--texto: rgba(255,255,255 .7);
+--blanco: #fff;
+--input: #3A3B3C;
+--input-hover: #4b4d4e;
+--activo: #2d88ff;
+--fondo-contenido: #242526;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #18191A;
+    color: var(--texto);
+}
+
+a {
+   color: var(--texto);
+   text-decoration: none;
+}
+
+header{
+    background: var(--fondo-contenido);
+
+}
+
+header .logo{
+
+    display: inline-block;
+}
+
+header .logo svg {
+
+    color: var(--blanco);
+    height: 35px;
+    width: 35px;
+
+    
+}
+
+header .barra-busqueda{
+    position: relative;
+    width: 100%;
+}
+
+header .barra-busqueda input {
+
+    width: 100%;
+    border: none ;
+    background: var(--input);
+    color: var(--texto);
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 20px 0 40px;
+
+}
+
+header .barra-busqueda .icono{
+
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    color: var(--texto);
+}
+
+header .menu a{
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+header .menu a:hover{
+    color: var(--texto);
+    background: var(--input);
+    border-radius: 5px;
+}
+
+header .menu a svg {
+ width: 25px;
+ height: 25px;
+ color: #fff;
+
+}
+
+header .menu .active {
+    border-bottom: 4px solid forestgreen;
+    color: #14d64e;
+}
+
+header .menu .active :hover{
+    background: none;
+    border-radius: 0px;
+    color: #14d64e;
+}
