@@ -4,12 +4,16 @@
 /* Definir paleta de colores */
 :root {
   --c1: #f8f9fa;
-  --c2: #007bff;
-  --c3: #6c757d;
-  --c4: #343a40;
-  --c5: #fff;
+  --c2: #2ab556;
+  --c3: #000000;
+  --c4: #ffffff;
+  --c5: #000000;
 }
-
+nav .logo svg {
+  color: var(--blanco);
+  height: 35px;
+  width: 35px;
+}
 /* Aplicar estilos generales */
 * {
   box-sizing: border-box;
@@ -19,7 +23,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--c1);
+  background: linear-gradient(to bottom, #000000, #f8f8f8); /* Cambia el fondo a un gradiente suave */
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  color: var(--c4);
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -34,7 +45,11 @@ h3 {
   color: var(--c2);
   margin-bottom: 0.5rem;
 }
-
+ p2 {
+  font-size: 1.2rem;
+  color: var(--c4);
+  margin-bottom: 0.5rem;
+}
 p {
   font-size: 1.2rem;
   color: var(--c3);
@@ -67,64 +82,108 @@ a {
   background-color: var(--c4);
 }
 
-
-
-body{
-
-    background: #f2f2f2;
-    font-family: 'Raleway', sans-serif;
+/* Estilos adicionales para mejorar la apariencia */
+.contact-info {
+  margin-bottom: 5px;
 }
 
-header .nav {
-
-    min-height: 80px;
-    overflow: hidden;
-    background: #fff;
-
+.menu {
+  list-style-type: none; /* Quita los puntos de la lista */
 }
 
-header .menu .c2{background: #005385;}
+.menu a {
+  color: var(--c5); /* Cambia el color del texto del enlace */
+  padding: 10px 20px; /* Aumenta el espacio alrededor de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave al color de fondo y al color del texto */
+}
 
-header .menu .c2:hover{background: #00426a;}
+.menu a:hover {
+  background-color: var(--c4); /* Cambia el color de fondo al pasar el ratón */
+  color: var(--c2); /* Cambia el color del texto al pasar el ratón */
+}
 
+.nav {
+  background-color: var(--c2);
+  padding: 1rem;
+}
+
+.contenedor-main {
+  margin-top: 1rem;
+}
+
+.icono {
+  margin-left: 0.5rem;
+}
+
+.c2 {
+  background-color: var(--c2);
+}
+
+.c2:hover {
+  background-color: var(--c4);
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.contact-info {
+  margin-bottom: 5px;
+}
+
+.menu {
+  list-style-type: none; /* Quita los puntos de la lista */
+}
+
+.menu a {
+  color: var(--c5); /* Cambia el color del texto del enlace */
+  padding: 10px 20px; /* Aumenta el espacio alrededor de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave al color de fondo y al color del texto */
+}
+
+.menu a:hover {
+  background-color: var(--c4); /* Cambia el color de fondo al pasar el ratón */
+  color: var(--c2); /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Estilos adicionales para mejorar la apariencia */
 /* Footer */
 .redes-sociales {
-    padding: 40px 0;
-    margin-bottom: 40px;
+  padding: 40px 0;
+  margin-bottom: 40px;
 }
 
 .redes-sociales .icono {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #f0f0f0; /* Color de fondo para los iconos */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px; /* Espacio entre los iconos */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Color de fondo para los iconos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Espacio entre los iconos */
 }
 
 .redes-sociales .imagen {
-    width: 100px; /* Tamaño de las imágenes */
-    height: 100px; /* Tamaño de las imágenes */
-    overflow: hidden;
-    position: relative;
+  width: 100px; /* Tamaño de las imágenes */
+  height: 100px; /* Tamaño de las imágenes */
+  overflow: hidden;
+  position: relative;
 }
 
 .redes-sociales .imagen img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
-    border-radius: 50%; /* Hace que las imágenes sean redondas */
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+  border-radius: 50%; /* Hace que las imágenes sean redondas */
 }
 
 .redes-sociales .icono svg {
-    width: 40px;
-    height: 40px;
-    fill: #fff; /* Color de los iconos */
+  width: 40px;
+  height: 40px;
+  fill: #fff; /* Color de los iconos */
 }
 
 .redes-sociales .twitter { background: #1da1f2; }
@@ -133,82 +192,85 @@ header .menu .c2:hover{background: #00426a;}
 
 
 .imagen img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
-    border-radius: 50%; /* Hace que las imágenes sean redondas */
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+  border-radius: 50%; /* Hace que las imágenes sean redondas */
 } 
 
 .modal-dialog{
 
-    max-width: 1000px;
+  max-width: 1000px;
 }
 
 
 @media screen and (max-width: 768px){}
 
 @media screen and (max-width: 992px){
- 
-    .logo{
-       
-        height: 76px;
 
-    }
+  .logo{
+     
+      height: 76px;
 
-    header.menu {
-
-     min-height: 76px;
-
-    }
-
-    header .menu a{
-
-        width: 100%;
-    }
-  
-  .portafolio .galeria .contenedor-imagen:nth-child(1){order: 1;}
-  .portafolio .galeria .contenedor-imagen:nth-child(2){order: 3;}
-  .portafolio .galeria .contenedor-imagen:nth-child(3){order: 6;}
-  .portafolio .galeria .contenedor-imagen:nth-child(4){order: 2;}
-  .portafolio .galeria .contenedor-imagen:nth-child(5){order: 5;}
-  .portafolio .galeria .contenedor-imagen:nth-child(6){order: 4;}
-
+  }
+}
+.footer p {
+  margin-bottom: 10px;
 }
 
+/* Estilos para la galería de imágenes */
+.portafolio {
+  padding: 20px;
+}
 
-    .contenedor-imagen {
-        overflow: hidden;
-    }
-    .contenedor-imagen img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-    }
-    .titulo {
-        color: #333; /* Color del título */
-        font-weight: bold;
-        font-size: 24px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .galeria {
-        background-color: #f9f9f9; /* Color de fondo de la galería */
-        border: 1px solid #ddd; /* Borde de la galería */
-        border-radius: 10px; /* Borde redondeado */
-        padding: 20px;
-    }
-    .contenedor-imagen {
-        overflow: hidden;
-        border-radius: 10px; /* Borde redondeado */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    }
-    .contenedor-imagen img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-    }
+.titulo {
+  color: #333; /* Color del título */
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.galeria {
+  background-color: #080f0dde; /* Color de fondo de la galería */
+  border: 1px solid #14352d; /* Borde de la galería */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 20px;
+}
+
+.contenedor-imagen {
+  overflow: hidden;
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    max-width: 200px; /* Limita el tamaño del logo para que no se vea demasiado grande */
+  }
+
+  header {
+    padding: 10px 0; /* Ajusta el espacio alrededor del encabezado */
+  }
+
+  .menu a {
+    width: 100%; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  }
+
+  .portafolio .galeria .contenedor-imagen:nth-child(1) { order: 1; }
+  .portafolio .galeria .contenedor-imagen:nth-child(2) { order: 3; }
+  .portafolio .galeria .contenedor-imagen:nth-child(3) { order: 6; }
+  .portafolio .galeria .contenedor-imagen:nth-child(4) { order: 2; }
+  .portafolio .galeria .contenedor-imagen:nth-child(5) { order: 5; }
+  .portafolio .galeria .contenedor-imagen:nth-child(6) { order: 4; }
+}
