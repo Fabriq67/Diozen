@@ -145,7 +145,6 @@ a {
   color: var(--c2); /* Cambia el color del texto al pasar el ratón */
 }
 
-/* Estilos adicionales para mejorar la apariencia */
 /* Footer */
 .redes-sociales {
   padding: 40px 0;
@@ -161,6 +160,12 @@ a {
   align-items: center;
   justify-content: center;
   margin: 10px; /* Espacio entre los iconos */
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.redes-sociales .icono:hover {
+  transform: scale(1.1); /* Escala ligeramente al pasar el mouse */
 }
 
 .redes-sociales .imagen {
