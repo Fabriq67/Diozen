@@ -9,11 +9,13 @@
   --c4: #ffffff;
   --c5: #000000;
 }
+
 nav .logo svg {
   color: var(--blanco);
   height: 35px;
   width: 35px;
 }
+
 /* Aplicar estilos generales */
 * {
   box-sizing: border-box;
@@ -22,14 +24,20 @@ nav .logo svg {
 }
 
 body {
-  
-  background: linear-gradient(to bottom, #fff8f8, #f8f8f8); /* Cambia el fondo a un gradiente suave */
- 
+  background: linear-gradient(to bottom, #000000, #057e76); /* Cambia el fondo a un gradiente suave */
 }
 
 header{
-
   background-color: #000000;
+}
+
+.container {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Excluir transiciones para modales */
+.modal .container {
+  transition: none;
 }
 
 p3{
@@ -37,18 +45,15 @@ p3{
 }
 
 h1 {
-  
   font-size: 2.5rem;
   color: var(--c3);
-  
 }
 
 h2 {
-  
-  
   color: var(--c3);
   margin-bottom: 0.5rem;
 }
+
 h4{
   color: var(--c1);
 }
@@ -58,11 +63,18 @@ h3 {
   color: var(--c2);
   margin-bottom: 0.5rem;
 }
- p2 {
+h6 {
+  font-size: 2.5rem;
+  color: var(--c1);
+}
+
+
+p2 {
   font-size: 1.2rem;
   color: var(--c3);
   margin-bottom: 0.5rem;
 }
+
 p {
   font-size: 1.2rem;
   color: var(--c3);
@@ -73,50 +85,7 @@ a {
   font-size: 1.2rem;
 }
 
-/* Aplicar estilos específicos */
-.nav {
-  background-color: var(--c2);
-  padding: 1rem;
-}
-
-.contenedor-main {
-  margin-top: 1rem;
-}
-
-
-.icono {
-  margin-left: 0.5rem;
-}
-
-.c2 {
-  background-color: var(--c2);
-}
-
-.c2:hover {
-  background-color: var(--c4);
-}
-
 /* Estilos adicionales para mejorar la apariencia */
-.contact-info {
-  margin-bottom: 5px;
-}
-
-.menu {
-  list-style-type: none; /* Quita los puntos de la lista */
-}
-
-.menu a {
-  color: var(--c5); /* Cambia el color del texto del enlace */
-  padding: 10px 20px; /* Aumenta el espacio alrededor de los enlaces */
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave al color de fondo y al color del texto */
-}
-
-.menu a:hover {
-  background-color: var(--c4); /* Cambia el color de fondo al pasar el ratón */
-  color: var(--c2); /* Cambia el color del texto al pasar el ratón */
-}
-
 .nav {
   background-color: var(--c2);
   padding: 1rem;
@@ -136,27 +105,6 @@ a {
 
 .c2:hover {
   background-color: var(--c4);
-}
-
-/* Estilos adicionales para mejorar la apariencia */
-.contact-info {
-  margin-bottom: 5px;
-}
-
-.menu {
-  list-style-type: none; /* Quita los puntos de la lista */
-}
-
-.menu a {
-  color: var(--c5); /* Cambia el color del texto del enlace */
-  padding: 10px 20px; /* Aumenta el espacio alrededor de los enlaces */
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave al color de fondo y al color del texto */
-}
-
-.menu a:hover {
-  background-color: var(--c4); /* Cambia el color de fondo al pasar el ratón */
-  color: var(--c2); /* Cambia el color del texto al pasar el ratón */
 }
 
 /* Footer */
@@ -169,13 +117,13 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: #ffffff; /* Color de fondo para los iconos */
+  background-color: #057e76; /* Color de fondo para los iconos */
   display: center;
   align-items: center;
   justify-content: center;
   margin: 10px; /* Espacio entre los iconos */
   transition: all 0.3s ease; /* Transición suave */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(241, 241, 241, 0.1); /* Sombra suave */
 }
 
 .redes-sociales .icono:hover {
@@ -205,8 +153,6 @@ a {
   fill: #0f0e0e; /* Color de los iconos */
 }
 
-
-
 .imagen img {
   width: 100%;
   height: auto;
@@ -218,21 +164,15 @@ a {
 } 
 
 .modal-dialog{
-
   max-width: 1000px;
 }
 
-
-@media screen and (max-width: 768px){}
-
 @media screen and (max-width: 992px){
-
   .logo{
-     
-      height: 76px;
-
+    height: 76px;
   }
 }
+
 .footer p {
   margin-bottom: 10px;
 }
